@@ -16,13 +16,7 @@
       linear-gradient(90deg, rgba(229,246,255,0.9) 0%, rgba(208,241,255,0.9) 36%, rgba(183,234,255,0.9) 100%);
     @apply backdrop-blur-xs shadow-soft border border-white/60;
   }
-  .pill {
-    @apply rounded-full px-3 py-1 text-xs font-medium;
-  }
-  .btn {
-    @apply pill bg-white/85 text-brand-700 shadow-soft hover:bg-white;
-  }
-  .btn-primary {
-    @apply pill bg-brand-700 text-white shadow-glass hover:bg-brand-800;
-  }
+  .pill { @apply rounded-full px-3 py-1 text-xs font-medium; }
+  .btn { @apply pill bg-white/85 text-brand-700 shadow-soft hover:bg-white; }
+  .btn-primary { @apply pill bg-brand-700 text-white shadow-glass hover:bg-brand-800; }
 }

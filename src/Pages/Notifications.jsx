@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import NotificationCard from "../Components/NotificationCard";
 import Badge from "../Components/Badge";
 import Icon from "../Components/Icon";
-import "../styles/glass.css";
+import "../index.css";
 
 export default function Notifications() {
   const [items, setItems] = useState([
