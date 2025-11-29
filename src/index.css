@@ -1,1 +1,28 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles utilitaires pour effet glass/neumorphism */
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xs shadow-soft border border-white/60;
+  }
+  .glass-pill {
+    @apply bg-white/70 backdrop-blur-xs shadow-soft border border-white/60 rounded-full;
+  }
+  .glass-blue {
+    background:
+      radial-gradient(1200px 400px at 70% 0%, rgba(164, 233, 255, 0.55) 0%, rgba(255,255,255,0.6) 70%),
+      linear-gradient(90deg, rgba(229,246,255,0.9) 0%, rgba(208,241,255,0.9) 36%, rgba(183,234,255,0.9) 100%);
+    @apply backdrop-blur-xs shadow-soft border border-white/60;
+  }
+  .pill {
+    @apply rounded-full px-3 py-1 text-xs font-medium;
+  }
+  .btn {
+    @apply pill bg-white/85 text-brand-700 shadow-soft hover:bg-white;
+  }
+  .btn-primary {
+    @apply pill bg-brand-700 text-white shadow-glass hover:bg-brand-800;
+  }
+}
