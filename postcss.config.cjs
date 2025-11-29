@@ -1,6 +1,6 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
+    // tailwindcss: {},  <-- SUPPRIMEZ ou commentez cette ligne
     autoprefixer: {},
   },
 };

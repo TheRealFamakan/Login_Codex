@@ -45,37 +45,7 @@ export default function Notifications() {
 
   return (
     <div className="min-h-screen px-3 md:px-6 py-6 bg-base-50">
-      {/* Top chip */}
-      <div className="max-w-6xl mx-auto">
-        <div className="inline-flex items-center gap-2 glass-pill px-4 py-2">
-          <Icon name="cup" />
-          <span className="text-sm font-medium text-gray-700">Competition Site</span>
-        </div>
-      </div>
-
-      {/* Nav */}
-      <nav className="max-w-6xl mx-auto mt-6">
-        <div className="glass rounded-full px-4 md:px-6 py-3 flex items-center gap-6">
-          <a className="flex items-center gap-2 text-gray-600 hover:text-gray-800" href="#">
-            <Icon name="home" />
-            <span>Home</span>
-          </a>
-          <a className="flex items-center gap-2 text-gray-600 hover:text-gray-800" href="#">
-            <Icon name="cup" />
-            <span>Competitions</span>
-          </a>
-          <div className="ml-0 md:ml-2 flex items-center gap-2 bg-brand-700 text-white rounded-full px-3 py-1 shadow-glass">
-            <Icon name="bell" className="h-5 w-5 text-white" />
-            <span>Notifications</span>
-            <Badge variant="primary">{unreadCount}</Badge>
-          </div>
-          <a className="flex items-center gap-2 text-gray-600 hover:text-gray-800 ml-auto" href="#">
-            <Icon name="users" />
-            <span>Teams</span>
-          </a>
-        </div>
-      </nav>
-
+      
       {/* Header + actions */}
       <header className="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row md:items-center md:justify-between">
         <div className="flex items-start gap-3">
